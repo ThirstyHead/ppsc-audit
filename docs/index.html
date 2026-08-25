@@ -67,6 +67,8 @@
   footer { margin-top: 2.5rem; border-top: 1px solid #e3e7ea; padding-top: 1rem; font-size: .85rem; color: #566573; }
   footer a { color: #2e86c1; }
   .datamenu { display: flex; flex-wrap: wrap; gap: 1rem; margin: .5rem 0; }
+  table.pages tr.caveat td.pg .caveat-err { color: #b9770e; word-break: break-all; }
+  .caveat-badge { background: #fef9f3; color: #b9770e; border: 1px solid #f0b27a; padding: .1rem .4rem; border-radius: 4px; font-weight: 600; white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -77,16 +79,17 @@
 
 <div class="meta">
   <span>Last audited: <strong>August 25, 2026</strong> (UTC)</span>
-  <span>Published runs: 1</span>
+  <span>Published runs: 2</span>
   <span>Tooling: <a href="https://github.com/ThirstyHead/audit-pikespeak.edu">axe-core + Playwright</a>, run weekly via GitHub Actions</span>
-  <span><span class="delta first">first published run</span></span>
+  <span><span class="delta up">▲ 2 vs last run</span></span>
 </div>
 
 <h2>Latest results</h2>
 <div class="cards">
-  <div class="card"><span class="num">1019</span><span class="lbl">Node-level violations</span></div>
+  <div class="card"><span class="num">1021</span><span class="lbl">Node-level violations</span></div>
   <div class="card"><span class="num">102</span><span class="lbl">Pages audited</span></div>
-  <div class="card"><span class="num">2773</span><span class="lbl">Need manual review</span></div>
+  <div class="card"><span class="num">2772</span><span class="lbl">Need manual review</span></div>
+  <div class="card"><span class="num ">0</span><span class="lbl">Not audited (HTTP error)</span></div>
 </div>
 <div class="severities">
       <div class="sevcard" style="border-top:4px solid #b03a2e">
@@ -94,7 +97,7 @@
         <span class="lbl">Critical</span>
       </div>
       <div class="sevcard" style="border-top:4px solid #ca6f1e">
-        <span class="num">805</span>
+        <span class="num">807</span>
         <span class="lbl">Serious</span>
       </div>
       <div class="sevcard" style="border-top:4px solid #b7950b">
@@ -107,7 +110,19 @@
       </div></div>
 
 <h2>Trend</h2>
-<p class="count">The trend chart appears once at least two runs have been published.</p>
+<div>
+    <svg viewBox="0 0 680 150" class="spark" role="img" aria-label="Trend of total node-level violations across audit runs">
+      <polyline points="40.0,18.2 640.0,18.0" fill="none" stroke="#2c3e50" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="40.0" cy="18.2" r="4" fill="#2c3e50">
+         <title>2026-08-25T06:22:57.596Z — 1019 node-level violations</title>
+       </circle>
+<circle cx="640.0" cy="18.0" r="4" fill="#2c3e50">
+         <title>2026-08-25T22:05:46.700Z — 1021 node-level violations</title>
+       </circle>
+      <text x="40" y="142" class="axis">2026-08-25</text>
+      <text x="640" y="142" class="axis" text-anchor="end">2026-08-25</text>
+      <text x="648" y="22" class="axis">1021</text>
+    </svg></div>
 
 <h2>Pages</h2>
 <p class="note">Every page audited in this run. “Audit report” opens that page's full axe report — violations, needs-review, and passes, with node-level detail.</p>
@@ -190,7 +205,7 @@
     <tr class="bad">
       <td class="pg"><a href="https://pikespeak.edu/about/office-president/strategic-plan/index.php" rel="noopener">Strategic Plan 2023 | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/office-president/strategic-plan/index.php</span></td>
       <td class="n bad">11</td>
-      <td class="n">7</td>
+      <td class="n">8</td>
       <td class="links"><a class="pgrep" href="pages/about-office-president-strategic-plan-index-php.html">Audit report</a></td>
     </tr>
     <tr class="bad">
@@ -471,8 +486,8 @@
     </tr>
     <tr class="bad">
       <td class="pg"><a href="https://pikespeak.edu/admissions/orientation/index.php" rel="noopener">New Student Online Orientation</a> <span class="pwurl">https://pikespeak.edu/admissions/orientation/index.php</span></td>
-      <td class="n bad">12</td>
-      <td class="n">11</td>
+      <td class="n bad">13</td>
+      <td class="n">10</td>
       <td class="links"><a class="pgrep" href="pages/admissions-orientation-index-php.html">Audit report</a></td>
     </tr>
     <tr class="bad">
@@ -549,8 +564,8 @@
     </tr>
     <tr class="bad">
       <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/financial-aid/apply-for-aid.php" rel="noopener">Applying for Financial Aid</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/financial-aid/apply-for-aid.php</span></td>
-      <td class="n bad">10</td>
-      <td class="n">8</td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
       <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-financial-aid-apply-for-aid-php.html">Audit report</a></td>
     </tr>
     <tr class="bad">
@@ -730,11 +745,12 @@
   </tbody>
 </table>
 
+
 <h2>Data</h2>
 <div class="datamenu">
   <a href="latest.json">latest.json</a>
   <a href="history.json">history.json</a>
-  <a href="https://github.com/ThirstyHead/ppsc-audit/blob/main/reports/axe-2026-08-25T06-22-57-596Z.json">Raw report (latest)</a>
+  <a href="https://github.com/ThirstyHead/ppsc-audit/blob/main/reports/axe-2026-08-25T22-05-46-700Z.json">Raw report (latest)</a>
   <a href="https://github.com/ThirstyHead/ppsc-audit/tree/main/reports">All raw reports</a>
 </div>
 
@@ -746,7 +762,7 @@
   Automated tooling detects only a subset of accessibility failures and does not replace
   manual or assistive-technology testing. “Needs manual review” items are results axe
   could not determine automatically.</p>
-  <p>Generated 2026-08-25T06:22:58.232Z · <a href="https://thirstyhead.com/ppsc-audit/">thirstyhead.com/ppsc-audit/</a></p>
+  <p>Generated 2026-08-25T22:05:47.375Z · <a href="https://thirstyhead.com/ppsc-audit/">thirstyhead.com/ppsc-audit/</a></p>
 </footer>
 </body>
 </html>

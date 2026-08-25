@@ -103,7 +103,7 @@
                     <br />
                 </div>
             </div>
-            <h2>axe-core found <span class="badge badge-warning">10</span> violations</h2>
+            <h2>axe-core found <span class="badge badge-warning">11</span> violations</h2>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -130,7 +130,7 @@
                         <td>color-contrast</td>
                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
                         <td>serious</td>
-                        <td>3</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <th scope="row"><a href="#3" class="card-link">3</a></th>
@@ -330,6 +330,25 @@
                                     <td>2</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">div[data-id&#x3D;&quot;pageInfo&quot;] &gt; .mb-3 &gt; p:nth-child(2)</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;p&gt;&lt;strong&gt;PPSC&#39;s FAFSA School Code: 008896&lt;&#x2F;strong&gt;&lt;br&gt;&lt;br&gt;Complete the 2025-2026 FASFA for Summer 2025, Fall 2025, Spring 2026, and Summer 2026&lt;br&gt;&lt;br&gt;&lt;strong&gt;March 31 is the priority deadline for FAFSA&lt;&#x2F;strong&gt;. You can apply after this date, but funding is not guaranteed.&lt;&#x2F;p&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 4.35 (foreground color: #ffffff, background color: #0384a2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">div[data-id&#x3D;&quot;pageInfo&quot;]</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">div[data-id&#x3D;&quot;pageInfo&quot;] &gt; .mb-3 &gt; p:nth-child(2) &gt; strong:nth-child(1)</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;strong&gt;PPSC&#39;s FAFSA School Code: 008896&lt;&#x2F;strong&gt;</code></pre>
@@ -346,7 +365,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
+                                    <td>4</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">strong:nth-child(6)</code></pre>
@@ -948,7 +967,7 @@
                                         <td>Elements must meet minimum color contrast ratio thresholds</td>
                                         <td>color-contrast</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
-                                        <td>8</td>
+                                        <td>7</td>
                                     </tr>
                                 </tbody>
                             </table>
