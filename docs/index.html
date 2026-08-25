@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WCAG 2.1 AA Audit — Pikes Peak State College (https://pikespeak.edu)</title>
+<meta name="description" content="Automated weekly WCAG 2.1 AA accessibility audit results for https://pikespeak.edu, produced with axe-core.">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 2rem 1.25rem 4rem; max-width: 940px;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #212f3c; background: #fdfdfc;
+  }
+  header h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  header .sub { color: #566573; margin: 0 0 1rem; }
+  .meta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; color: #566573; font-size: .92rem; border-bottom: 1px solid #e3e7ea; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; margin-bottom: 1rem; }
+  .card { background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; padding: .9rem 1rem; }
+  .card .num { display: block; font-size: 1.9rem; font-weight: 700; line-height: 1.2; }
+  .card .lbl { color: #566573; font-size: .85rem; }
+  .sevcard { background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; padding: .6rem .8rem; display: flex; align-items: baseline; gap: .5rem; }
+  .sevcard .num { font-size: 1.4rem; font-weight: 700; }
+  .sevcard .lbl { color: #566573; font-size: .82rem; }
+  .severities { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: .5rem; margin-bottom: 1.5rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .75rem; }
+  .spark { width: 100%; max-width: 680px; height: auto; background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; }
+  .axis { font-size: 11px; fill: #7b8a8b; }
+  .delta { font-size: .9rem; font-weight: 600; }
+  .delta.up { color: #b03a2e; } .delta.down { color: #1e8449; }
+  .delta.flat, .delta.first { color: #7b8a8b; font-weight: 400; }
+  .page { background: #fff; border: 1px solid #e3e7ea; border-radius: 8px; padding: 1rem 1.25rem 1.25rem; margin-bottom: 1rem; }
+  .page.failed { border-color: #f0b27a; background: #fef9f3; }
+  .page h3 { margin: 0 0 .25rem; font-size: 1.05rem; word-break: break-all; }
+  .page h3 .title { font-weight: 400; color: #7b8a8b; font-size: .9rem; }
+  .page h4 { margin: 1rem 0 .5rem; font-size: .95rem; }
+  .count { color: #7b8a8b; font-weight: 400; font-size: .85rem; }
+  .total { margin: 0 0 .5rem; color: #566573; }
+  .clean { color: #1e8449; font-weight: 600; }
+  .warn { color: #b9770e; }
+  table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid #eef1f2; vertical-align: top; }
+  th { color: #566573; font-size: .8rem; text-transform: uppercase; letter-spacing: .03em; }
+  .targets { color: #7b8a8b; font-size: .82rem; word-break: break-all; max-width: 260px; }
+  code { background: #f4f6f7; padding: .1rem .35rem; border-radius: 4px; font-size: .85em; }
+  ul.inc { margin: .25rem 0 0; padding-left: 1.2rem; }
+  .note { color: #566573; font-size: .9rem; margin: .25rem 0 .75rem; }
+  table.pages { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  table.pages thead th {
+    position: sticky; top: 0; background: #fdfdfc; z-index: 1;
+    border-bottom: 2px solid #e3e7ea;
+  }
+  table.pages th.n, table.pages td.n { text-align: right; white-space: nowrap; }
+  table.pages td.n.bad { color: #b03a2e; font-weight: 700; }
+  table.pages td.pg { max-width: 0; }
+  table.pages td.pg a { word-break: break-all; }
+  table.pages .pwurl { display: block; color: #7b8a8b; font-size: .8rem; margin-top: .1rem; word-break: break-all; }
+  table.pages td.pg .err { word-break: break-all; }
+  table.pages td.links { white-space: nowrap; text-align: right; }
+  table.pages a.pgrep {
+    color: #2e86c1; text-decoration: none; font-weight: 600;
+    border: 1px solid #cfe6f5; background: #f4fafd; padding: .15rem .5rem; border-radius: 6px;
+  }
+  table.pages a.pgrep:hover { background: #e8f4fb; }
+  table.pages tr.bad td.pg a { color: #b03a2e; }
+  footer { margin-top: 2.5rem; border-top: 1px solid #e3e7ea; padding-top: 1rem; font-size: .85rem; color: #566573; }
+  footer a { color: #2e86c1; }
+  .datamenu { display: flex; flex-wrap: wrap; gap: 1rem; margin: .5rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>WCAG 2.1 AA Audit — Pikes Peak State College</h1>
+  <p class="sub"><a href="https://pikespeak.edu">https://pikespeak.edu</a></p>
+</header>
+
+<div class="meta">
+  <span>Last audited: <strong>August 25, 2026</strong> (UTC)</span>
+  <span>Published runs: 1</span>
+  <span>Tooling: <a href="https://github.com/ThirstyHead/audit-pikespeak.edu">axe-core + Playwright</a>, run weekly via GitHub Actions</span>
+  <span><span class="delta first">first published run</span></span>
+</div>
+
+<h2>Latest results</h2>
+<div class="cards">
+  <div class="card"><span class="num">1019</span><span class="lbl">Node-level violations</span></div>
+  <div class="card"><span class="num">102</span><span class="lbl">Pages audited</span></div>
+  <div class="card"><span class="num">2773</span><span class="lbl">Need manual review</span></div>
+</div>
+<div class="severities">
+      <div class="sevcard" style="border-top:4px solid #b03a2e">
+        <span class="num">214</span>
+        <span class="lbl">Critical</span>
+      </div>
+      <div class="sevcard" style="border-top:4px solid #ca6f1e">
+        <span class="num">805</span>
+        <span class="lbl">Serious</span>
+      </div>
+      <div class="sevcard" style="border-top:4px solid #b7950b">
+        <span class="num">0</span>
+        <span class="lbl">Moderate</span>
+      </div>
+      <div class="sevcard" style="border-top:4px solid #707b7c">
+        <span class="num">0</span>
+        <span class="lbl">Minor</span>
+      </div></div>
+
+<h2>Trend</h2>
+<p class="count">The trend chart appears once at least two runs have been published.</p>
+
+<h2>Pages</h2>
+<p class="note">Every page audited in this run. “Audit report” opens that page's full axe report — violations, needs-review, and passes, with node-level detail.</p>
+
+<table class="pages">
+  <thead><tr><th class="pg">Page</th><th class="n">Violations</th><th class="n">Needs review</th><th>Report</th></tr></thead>
+  <tbody>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/" rel="noopener">Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/</span></td>
+      <td class="n bad">10</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/home.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/_training/emergency-management-old-backup/index.php" rel="noopener">Emergency Management | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/_training/emergency-management-old-backup/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">9</td>
+      <td class="links"><a class="pgrep" href="pages/-training-emergency-management-old-backup-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/_training/emergency-management-old-backup/weather-closures.php" rel="noopener">Weather Closure | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/_training/emergency-management-old-backup/weather-closures.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/-training-emergency-management-old-backup-weather-closures-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/accreditations.php" rel="noopener">Accreditation | PPSC</a> <span class="pwurl">https://pikespeak.edu/about/accreditations.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/about-accreditations-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/assessment/index.php" rel="noopener">Assessment | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/assessment/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/about-assessment-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/covid/index.php" rel="noopener">COVID-19 and Communicable Diseases | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/covid/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/about-covid-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/equity-inclusion/index.php" rel="noopener">Student Experience &amp; Equity | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/equity-inclusion/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">12</td>
+      <td class="links"><a class="pgrep" href="pages/about-equity-inclusion-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/index.php" rel="noopener">About | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/index.php</span></td>
+      <td class="n bad">9</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/about-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/institutional-effectiveness/index.php" rel="noopener">Institutional Effectiveness | PPSC</a> <span class="pwurl">https://pikespeak.edu/about/institutional-effectiveness/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/about-institutional-effectiveness-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/locations-maps.php" rel="noopener">Locations &amp; Maps | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/locations-maps.php</span></td>
+      <td class="n bad">23</td>
+      <td class="n">1083</td>
+      <td class="links"><a class="pgrep" href="pages/about-locations-maps-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/news/index.php" rel="noopener">News &amp; Press Releases | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/news/index.php</span></td>
+      <td class="n bad">52</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/about-news-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/office-president/index.php" rel="noopener">Office of the President | PPSC</a> <span class="pwurl">https://pikespeak.edu/about/office-president/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/about-office-president-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/about/office-president/strategic-plan/index.php" rel="noopener">Strategic Plan 2023 | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/about/office-president/strategic-plan/index.php</span></td>
+      <td class="n bad">11</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/about-office-president-strategic-plan-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/academic-calendar.php" rel="noopener">Academic Calendar | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/academic-calendar.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/academics-academic-calendar-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/catalog-schedule/index.php" rel="noopener">Catalog &amp; Schedule | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/catalog-schedule/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/academics-catalog-schedule-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/CETL/index.php" rel="noopener">Center for Excellence in Teaching &amp; Learning (CETL) l PPSC</a> <span class="pwurl">https://pikespeak.edu/academics/CETL/index.php</span></td>
+      <td class="n bad">11</td>
+      <td class="n">63</td>
+      <td class="links"><a class="pgrep" href="pages/academics-CETL-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/coaching/index.php" rel="noopener">Coaching at PPSC | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/coaching/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/academics-coaching-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/elearning/elearning-faq.php" rel="noopener">Interested in taking an online course?</a> <span class="pwurl">https://pikespeak.edu/academics/elearning/elearning-faq.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">9</td>
+      <td class="links"><a class="pgrep" href="pages/academics-elearning-elearning-faq-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/high-impact-learning/index.php" rel="noopener">High Impact Practices</a> <span class="pwurl">https://pikespeak.edu/academics/high-impact-learning/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/academics-high-impact-learning-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/high-school-programs/index.php" rel="noopener">High School Programs | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/high-school-programs/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/academics-high-school-programs-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/index.php" rel="noopener">Academic Support | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/academics-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/instructional-services/index.php" rel="noopener">Instructional Services | PPSC</a> <span class="pwurl">https://pikespeak.edu/academics/instructional-services/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">14</td>
+      <td class="links"><a class="pgrep" href="pages/academics-instructional-services-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/learning-commons/library/index.php" rel="noopener">Library | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/learning-commons/library/index.php</span></td>
+      <td class="n bad">11</td>
+      <td class="n">13</td>
+      <td class="links"><a class="pgrep" href="pages/academics-learning-commons-library-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/learning-commons/tutoring/index.php" rel="noopener">Tutoring | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/learning-commons/tutoring/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/academics-learning-commons-tutoring-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/studio-west/art-gallery.php" rel="noopener">Art Gallery | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/studio-west/art-gallery.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/academics-studio-west-art-gallery-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/academics/workforce-development/index.php" rel="noopener">Workforce Development | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/academics/workforce-development/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/academics-workforce-development-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/behavioral-intervention-team/index.php" rel="noopener">Behavioral Intervention Team | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/behavioral-intervention-team/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-behavioral-intervention-team-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/bookstore-information.php" rel="noopener">Bookstore Information</a> <span class="pwurl">https://pikespeak.edu/administration-operations/bookstore-information.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-bookstore-information-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/campus-police/index.php" rel="noopener">Campus Police | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/campus-police/index.php</span></td>
+      <td class="n bad">9</td>
+      <td class="n">12</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-campus-police-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/campus-police/security-reports.php" rel="noopener">Annual Security Report l Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/campus-police/security-reports.php</span></td>
+      <td class="n bad">10</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-campus-police-security-reports-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/copy-center.php" rel="noopener">Copy Center | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/copy-center.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-copy-center-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/digital_accessibility.php" rel="noopener">Digital Accessibility</a> <span class="pwurl">https://pikespeak.edu/administration-operations/digital_accessibility.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">13</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-digital-accessibility-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/disclaimers-legal-notices/heerf.php" rel="noopener">HEERF Reporting | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/disclaimers-legal-notices/heerf.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-disclaimers-legal-notices-heerf-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/disclaimers-legal-notices/index.php" rel="noopener">Disclaimers &amp; Legal Notices | PPSC</a> <span class="pwurl">https://pikespeak.edu/administration-operations/disclaimers-legal-notices/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-disclaimers-legal-notices-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/disclaimers-legal-notices/privacy-policy.php" rel="noopener">Privacy Policy | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/disclaimers-legal-notices/privacy-policy.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-disclaimers-legal-notices-privacy-policy-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/facilities/index.php" rel="noopener">Facilities &amp; Capital Projects | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/facilities/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-facilities-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/form-search.php" rel="noopener">Form Search | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/form-search.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-form-search-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/foundation/how-give.php" rel="noopener">How to Give | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/foundation/how-give.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-foundation-how-give-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/foundation/index.php" rel="noopener">Foundation | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/foundation/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">12</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-foundation-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/human-resource-services/civil-rights-sexual-misconduct/index.php" rel="noopener">Civil Rights and Sexual Misconduct Resolution Process | PPSC</a> <span class="pwurl">https://pikespeak.edu/administration-operations/human-resource-services/civil-rights-sexual-misconduct/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">16</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-human-resource-services-civil-rights-sexual-misconduct-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/human-resource-services/employment/index.php" rel="noopener">Human Resource Services Employment | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/human-resource-services/employment/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-human-resource-services-employment-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/human-resource-services/index.php" rel="noopener">Human Resource Services | PPSC</a> <span class="pwurl">https://pikespeak.edu/administration-operations/human-resource-services/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-human-resource-services-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/marketing/external-partners.php" rel="noopener">Media Relations &amp; Brand Guidelines | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/marketing/external-partners.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-marketing-external-partners-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/marketing/index.php" rel="noopener">Marketing &amp; Communications | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/marketing/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">12</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-marketing-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/marketing/stall-street-journal.php" rel="noopener">PPSC Stall Street Journal</a> <span class="pwurl">https://pikespeak.edu/administration-operations/marketing/stall-street-journal.php</span></td>
+      <td class="n bad">37</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-marketing-stall-street-journal-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/report-concern-incident/index.php" rel="noopener">Report Concern or Incident | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/administration-operations/report-concern-incident/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-report-concern-incident-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/administration-operations/use-of-facilities.php" rel="noopener">Use of Facilities | PPSC</a> <span class="pwurl">https://pikespeak.edu/administration-operations/use-of-facilities.php</span></td>
+      <td class="n bad">9</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/administration-operations-use-of-facilities-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/adult-learners/index.php" rel="noopener">Adult Learners | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/adult-learners/index.php</span></td>
+      <td class="n bad">16</td>
+      <td class="n">56</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-adult-learners-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/advising/index.php" rel="noopener">Advising | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/advising/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">71</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-advising-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/advising/planning-for-bachelors/index.php" rel="noopener">Transfer After PPSC | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/advising/planning-for-bachelors/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">64</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-advising-planning-for-bachelors-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/apply.php" rel="noopener">Apply | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/apply.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-apply-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/colorado-residency/index.php" rel="noopener">Colorado Residency | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/colorado-residency/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-colorado-residency-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/enroll/index.php" rel="noopener">Find Your Path | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/enroll/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">63</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-enroll-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/enroll/parents-families.php" rel="noopener">Parents &amp; Families | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/enroll/parents-families.php</span></td>
+      <td class="n bad">9</td>
+      <td class="n">60</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-enroll-parents-families-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/enroll/prospective-students/international-students/index.php" rel="noopener">International Students | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/enroll/prospective-students/international-students/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-enroll-prospective-students-international-students-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/enroll/visit-campus/index.php" rel="noopener">Visit Campus | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/enroll/visit-campus/index.php</span></td>
+      <td class="n bad">11</td>
+      <td class="n">17</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-enroll-visit-campus-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/espanol/index.php" rel="noopener">Español | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/espanol/index.php</span></td>
+      <td class="n bad">11</td>
+      <td class="n">49</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-espanol-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/military/" rel="noopener">Military &amp; Veterans | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/military/</span></td>
+      <td class="n bad">16</td>
+      <td class="n">51</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-military.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/military/index.php" rel="noopener">Military &amp; Veterans | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/military/index.php</span></td>
+      <td class="n bad">16</td>
+      <td class="n">51</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-military-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/orientation/index.php" rel="noopener">New Student Online Orientation</a> <span class="pwurl">https://pikespeak.edu/admissions/orientation/index.php</span></td>
+      <td class="n bad">12</td>
+      <td class="n">11</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-orientation-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/records/graduation/commencement.php" rel="noopener">Commencement Ceremony</a> <span class="pwurl">https://pikespeak.edu/admissions/records/graduation/commencement.php</span></td>
+      <td class="n bad">18</td>
+      <td class="n">11</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-records-graduation-commencement-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/records/graduation/index.php" rel="noopener">Graduation</a> <span class="pwurl">https://pikespeak.edu/admissions/records/graduation/index.php</span></td>
+      <td class="n bad">20</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-records-graduation-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/records/index.php" rel="noopener">Records | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/records/index.php</span></td>
+      <td class="n bad">23</td>
+      <td class="n">42</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-records-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/records/transcripts/cpl.php" rel="noopener">Prior Learning Assessment | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/records/transcripts/cpl.php</span></td>
+      <td class="n bad">15</td>
+      <td class="n">9</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-records-transcripts-cpl-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/records/transcripts/request-transcripts.php" rel="noopener">Request Transcripts | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/records/transcripts/request-transcripts.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-records-transcripts-request-transcripts-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/register/index.php" rel="noopener">Registration Process | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/register/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">14</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-register-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/admissions/testing-center/index.php" rel="noopener">Testing Center | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/admissions/testing-center/index.php</span></td>
+      <td class="n bad">9</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/admissions-testing-center-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/calendar.php" rel="noopener">Calendar | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/calendar.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/calendar-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/contact.php" rel="noopener">Contact | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/contact.php</span></td>
+      <td class="n bad">21</td>
+      <td class="n">51</td>
+      <td class="links"><a class="pgrep" href="pages/contact-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/costs/payment-options.php" rel="noopener">Payment Options | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/costs/payment-options.php</span></td>
+      <td class="n bad">10</td>
+      <td class="n">9</td>
+      <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-costs-payment-options-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/costs/tuition-fees.php" rel="noopener">Tuition &amp; Fees | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/costs/tuition-fees.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">64</td>
+      <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-costs-tuition-fees-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/financial-aid/aid-types/index.php" rel="noopener">Financial Aid Types | Pikes Peal Community College</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/financial-aid/aid-types/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-financial-aid-aid-types-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/financial-aid/apply-for-aid.php" rel="noopener">Applying for Financial Aid</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/financial-aid/apply-for-aid.php</span></td>
+      <td class="n bad">10</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-financial-aid-apply-for-aid-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/financial-aid/index.php" rel="noopener">Financial Aid | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/financial-aid/index.php</span></td>
+      <td class="n bad">24</td>
+      <td class="n">39</td>
+      <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-financial-aid-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/promise-programs/index.php" rel="noopener">Promise Programs | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/promise-programs/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">15</td>
+      <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-promise-programs-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/costs-scholarships-aid/scholarships/index.php" rel="noopener">Scholarships</a> <span class="pwurl">https://pikespeak.edu/costs-scholarships-aid/scholarships/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/costs-scholarships-aid-scholarships-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/directory.php" rel="noopener">Staff &amp; Faculty Directory | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/directory.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/directory-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/landing-pages/wildfires.php" rel="noopener">Wildfire Emergency &amp; Support Resources</a> <span class="pwurl">https://pikespeak.edu/landing-pages/wildfires.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">11</td>
+      <td class="links"><a class="pgrep" href="pages/landing-pages-wildfires-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/pathways/arts-humanities-and-social-sciences.php" rel="noopener">Arts, Humanities and Social Sciences</a> <span class="pwurl">https://pikespeak.edu/pathways/arts-humanities-and-social-sciences.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/pathways-arts-humanities-and-social-sciences-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/pathways/business-technology-and-public-service.php" rel="noopener">Business, Technology and Public Service</a> <span class="pwurl">https://pikespeak.edu/pathways/business-technology-and-public-service.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/pathways-business-technology-and-public-service-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/pathways/health-sciences.php" rel="noopener">Health Sciences</a> <span class="pwurl">https://pikespeak.edu/pathways/health-sciences.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">10</td>
+      <td class="links"><a class="pgrep" href="pages/pathways-health-sciences-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/pathways/index.php" rel="noopener">Pathways</a> <span class="pwurl">https://pikespeak.edu/pathways/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">8</td>
+      <td class="links"><a class="pgrep" href="pages/pathways-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/pathways/science-engineering-and-math.php" rel="noopener">Science, Engineering and Math</a> <span class="pwurl">https://pikespeak.edu/pathways/science-engineering-and-math.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">11</td>
+      <td class="links"><a class="pgrep" href="pages/pathways-science-engineering-and-math-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/pathways/technical-and-professional-studies.php" rel="noopener">Technical and Professional Studies</a> <span class="pwurl">https://pikespeak.edu/pathways/technical-and-professional-studies.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">11</td>
+      <td class="links"><a class="pgrep" href="pages/pathways-technical-and-professional-studies-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/programs/cybersecurity/index.php" rel="noopener">Cybersecurity | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/programs/cybersecurity/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">70</td>
+      <td class="links"><a class="pgrep" href="pages/programs-cybersecurity-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/programs/english-second-language/index.php" rel="noopener">English as a Second Language | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/programs/english-second-language/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">66</td>
+      <td class="links"><a class="pgrep" href="pages/programs-english-second-language-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/programs/hospitality/index.php" rel="noopener">Hospitality &amp; Resort Management | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/programs/hospitality/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">65</td>
+      <td class="links"><a class="pgrep" href="pages/programs-hospitality-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/programs/index.php" rel="noopener">Program Search | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/programs/index.php</span></td>
+      <td class="n bad">20</td>
+      <td class="n">3</td>
+      <td class="links"><a class="pgrep" href="pages/programs-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/programs/surgical-services/index.php" rel="noopener">Surgical Services | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/programs/surgical-services/index.php</span></td>
+      <td class="n bad">10</td>
+      <td class="n">65</td>
+      <td class="links"><a class="pgrep" href="pages/programs-surgical-services-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/programs/zoo-keeping-technology/index.php" rel="noopener">Zoo Keeping Technology | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/programs/zoo-keeping-technology/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">34</td>
+      <td class="links"><a class="pgrep" href="pages/programs-zoo-keeping-technology-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/accessibility-services/index.php" rel="noopener">Accessibility Services | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/accessibility-services/index.php</span></td>
+      <td class="n bad">10</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-accessibility-services-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/basic-needs-assistance/index.php" rel="noopener">Basic Needs Assistance | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/basic-needs-assistance/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">6</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-basic-needs-assistance-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/career-services/index.php" rel="noopener">Career Services | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/career-services/index.php</span></td>
+      <td class="n bad">23</td>
+      <td class="n">23</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-career-services-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/career-services/student-jobs/index.php" rel="noopener">Student Employment Positions</a> <span class="pwurl">https://pikespeak.edu/student-support/career-services/student-jobs/index.php</span></td>
+      <td class="n bad">9</td>
+      <td class="n">24</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-career-services-student-jobs-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/child-care/index.php" rel="noopener">Community Partnership for Child Development | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/child-care/index.php</span></td>
+      <td class="n bad">7</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-child-care-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/counseling-center/index.php" rel="noopener">Counseling Center | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/counseling-center/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">11</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-counseling-center-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/dean-of-students.php" rel="noopener">Student Conduct | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/dean-of-students.php</span></td>
+      <td class="n bad">10</td>
+      <td class="n">1</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-dean-of-students-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/ppsc-student-handbook/index.php" rel="noopener">PPSC All Student Handbook</a> <span class="pwurl">https://pikespeak.edu/student-support/ppsc-student-handbook/index.php</span></td>
+      <td class="n bad">12</td>
+      <td class="n">5</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-ppsc-student-handbook-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/student-life/index.php" rel="noopener">Student Engagement &amp; Leadership | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/student-life/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">9</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-student-life-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/student-life/recreation-and-wellness/index.php" rel="noopener">Recreation and Wellness | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/student-life/recreation-and-wellness/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">13</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-student-life-recreation-and-wellness-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/sustainability/index.php" rel="noopener">Office of Sustainability | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/sustainability/index.php</span></td>
+      <td class="n bad">11</td>
+      <td class="n">2</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-sustainability-index-php.html">Audit report</a></td>
+    </tr>
+    <tr class="bad">
+      <td class="pg"><a href="https://pikespeak.edu/student-support/TRIO/index.php" rel="noopener">TRIO Student Support Services | Pikes Peak State College</a> <span class="pwurl">https://pikespeak.edu/student-support/TRIO/index.php</span></td>
+      <td class="n bad">8</td>
+      <td class="n">7</td>
+      <td class="links"><a class="pgrep" href="pages/student-support-TRIO-index-php.html">Audit report</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Data</h2>
+<div class="datamenu">
+  <a href="latest.json">latest.json</a>
+  <a href="history.json">history.json</a>
+  <a href="https://github.com/ThirstyHead/ppsc-audit/blob/main/reports/axe-2026-08-25T06-22-57-596Z.json">Raw report (latest)</a>
+  <a href="https://github.com/ThirstyHead/ppsc-audit/tree/main/reports">All raw reports</a>
+</div>
+
+<footer>
+  <p><strong>About this audit.</strong> Results are produced automatically by
+  <a href="https://github.com/dequelabs/axe-core">axe-core</a> (Deque) against the WCAG 2.1 A/AA rule set,
+  on a weekly schedule, by the open-source tooling in
+  <a href="https://github.com/ThirstyHead/audit-pikespeak.edu">ThirstyHead/audit-pikespeak.edu</a>.
+  Automated tooling detects only a subset of accessibility failures and does not replace
+  manual or assistive-technology testing. “Needs manual review” items are results axe
+  could not determine automatically.</p>
+  <p>Generated 2026-08-25T06:22:58.232Z · <a href="https://thirstyhead.com/ppsc-audit/">thirstyhead.com/ppsc-audit/</a></p>
+</footer>
+</body>
+</html>
