@@ -103,7 +103,7 @@
                     <br />
                 </div>
             </div>
-            <h2>axe-core found <span class="badge badge-warning">10</span> violations</h2>
+            <h2>axe-core found <span class="badge badge-warning">12</span> violations</h2>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -130,7 +130,7 @@
                         <td>color-contrast</td>
                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
                         <td>serious</td>
-                        <td>3</td>
+                        <td>5</td>
                     </tr>
                     <tr>
                         <th scope="row"><a href="#3" class="card-link">3</a></th>
@@ -309,7 +309,45 @@
                                     <td>1</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">.purple &gt; .container &gt; .row &gt; .col-lg-7.col-12 &gt; .flex-promo &gt; .forest-back.header-box &gt; .header-two.mb-0</code></pre>
+                                        <pre><code class="css text-wrap">p:nth-child(1) &gt; span</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;span&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 4.35 (foreground color: #ffffff, background color: #0384a2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">.azure-back</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">p:nth-child(2) &gt; span</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;span&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 4.35 (foreground color: #ffffff, background color: #0384a2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">.azure-back</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">.purple &gt; .container &gt; .row &gt; .col-lg-7.col-12 &gt; .flex-promo &gt; .forest-back.header-box &gt; .header-two.mb-0.ms-3</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;h3 class&#x3D;&quot;header-two mb-0 ms-3&quot;&gt;New Students&lt;&#x2F;h3&gt;</code></pre>
                                     </td>
@@ -325,10 +363,10 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>2</td>
+                                    <td>4</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">.component &gt; .container &gt; .row &gt; .col-lg-7.col-12 &gt; .flex-promo &gt; .forest-back.header-box &gt; .header-two.mb-0</code></pre>
+                                        <pre><code class="css text-wrap">.component &gt; .container &gt; .row &gt; .col-lg-7.col-12 &gt; .flex-promo &gt; .forest-back.header-box &gt; .header-two.mb-0.ms-3</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;h3 class&#x3D;&quot;header-two mb-0 ms-3&quot;&gt;Returning Students&lt;&#x2F;h3&gt;</code></pre>
                                     </td>
@@ -344,10 +382,10 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>3</td>
+                                    <td>5</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
-                                        <pre><code class="css text-wrap">.no-curve &gt; .container &gt; .row &gt; .col-lg-7.col-12 &gt; .flex-promo &gt; .forest-back.header-box &gt; .header-two.mb-0</code></pre>
+                                        <pre><code class="css text-wrap">.no-curve &gt; .container &gt; .row &gt; .col-lg-7.col-12 &gt; .flex-promo &gt; .forest-back.header-box &gt; .header-two.mb-0.ms-3</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;h3 class&#x3D;&quot;header-two mb-0 ms-3&quot;&gt;Contact and Locations&lt;&#x2F;h3&gt;</code></pre>
                                     </td>
@@ -675,7 +713,7 @@
                                 aria-expanded="false"
                                 aria-controls="passes"
                             >
-                                axe returned 26 passed axe
+                                axe returned 27 passed axe
                                 checks. Expand details on
                                 click
                             </button>
@@ -718,7 +756,7 @@
                                         <td>Deprecated ARIA roles must not be used</td>
                                         <td>aria-deprecated-role</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>11</td>
+                                        <td>12</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">4</th>
@@ -746,14 +784,14 @@
                                         <td>Required ARIA attributes must be provided</td>
                                         <td>aria-required-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>11</td>
+                                        <td>12</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">8</th>
                                         <td>ARIA roles used must conform to valid values</td>
                                         <td>aria-roles</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>11</td>
+                                        <td>12</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">9</th>
@@ -774,112 +812,119 @@
                                         <td>Inline text spacing must be adjustable with custom stylesheets</td>
                                         <td>avoid-inline-spacing</td>
                                         <td>WCAG 2.1 Level AA, WCAG 1.4.1.2</td>
-                                        <td>3</td>
+                                        <td>4</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">12</th>
+                                        <td>Buttons must have discernible text</td>
+                                        <td>button-name</td>
+                                        <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">13</th>
                                         <td>Page must have means to bypass repeated blocks</td>
                                         <td>bypass</td>
                                         <td>WCAG 2 Level A, WCAG 2.4.1</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">13</th>
+                                        <th scope="row">14</th>
                                         <td>Elements must meet minimum color contrast ratio thresholds</td>
                                         <td>color-contrast</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
-                                        <td>101</td>
+                                        <td>102</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">14</th>
+                                        <th scope="row">15</th>
                                         <td>Documents must have &lt;title&gt; element to aid in navigation</td>
                                         <td>document-title</td>
                                         <td>WCAG 2 Level A, WCAG 2.4.2</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">15</th>
+                                        <th scope="row">16</th>
                                         <td>IDs used in ARIA and labels must be unique</td>
                                         <td>duplicate-id-aria</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
                                         <td>22</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">16</th>
+                                        <th scope="row">17</th>
                                         <td>Form field must not have multiple label elements</td>
                                         <td>form-field-multiple-labels</td>
                                         <td>WCAG 2 Level A, WCAG 3.3.2</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">17</th>
+                                        <th scope="row">18</th>
                                         <td>&lt;html&gt; element must have a lang attribute</td>
                                         <td>html-has-lang</td>
                                         <td>WCAG 2 Level A, WCAG 3.1.1</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">18</th>
+                                        <th scope="row">19</th>
                                         <td>&lt;html&gt; element must have a valid value for the lang attribute</td>
                                         <td>html-lang-valid</td>
                                         <td>WCAG 2 Level A, WCAG 3.1.1</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">19</th>
+                                        <th scope="row">20</th>
                                         <td>Images must have alternative text</td>
                                         <td>image-alt</td>
                                         <td>WCAG 2 Level A, WCAG 1.1.1</td>
                                         <td>5</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">20</th>
+                                        <th scope="row">21</th>
                                         <td>Form elements must have labels</td>
                                         <td>label</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">21</th>
+                                        <th scope="row">22</th>
                                         <td>Links must be distinguishable without relying on color</td>
                                         <td>link-in-text-block</td>
                                         <td>WCAG 2 Level A, WCAG 1.4.1</td>
                                         <td>8</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">22</th>
+                                        <th scope="row">23</th>
                                         <td>Links must have discernible text</td>
                                         <td>link-name</td>
                                         <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
                                         <td>79</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">23</th>
+                                        <th scope="row">24</th>
                                         <td>&lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements</td>
                                         <td>list</td>
                                         <td>WCAG 2 Level A, WCAG 1.3.1</td>
                                         <td>9</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">24</th>
+                                        <th scope="row">25</th>
                                         <td>&lt;li&gt; elements must be contained in a &lt;ul&gt; or &lt;ol&gt;</td>
                                         <td>listitem</td>
                                         <td>WCAG 2 Level A, WCAG 1.3.1</td>
                                         <td>58</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">25</th>
+                                        <th scope="row">26</th>
                                         <td>Zooming and scaling must not be disabled</td>
                                         <td>meta-viewport</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.4</td>
                                         <td>1</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row">26</th>
+                                        <th scope="row">27</th>
                                         <td>Interactive controls must not be nested</td>
                                         <td>nested-interactive</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>17</td>
+                                        <td>18</td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-08-31T12:40:48.448Z",
+  "siteGenerated": "2026-09-07T11:36:07.779Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-pikespeak.edu",
   "report": {
-    "generated": "2026-08-31T12:40:47.400Z",
+    "generated": "2026-09-07T11:36:06.738Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -90,11 +90,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 9,
+            "nodes": 11,
             "firstTargets": [
-              "#mastheadBoxVideo > h2",
-              ".ppsc-content-container > .navy",
-              "a[href$=\"wildfires.php\"]"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              "#mastheadBoxVideo > h2"
             ]
           },
           {
@@ -190,11 +190,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -207,7 +207,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_hecmfyphw0k"
+              "#html5_video_5nlv1dc71wr"
             ]
           }
         ]
@@ -276,11 +276,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -349,11 +349,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -422,11 +422,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -497,9 +497,9 @@
             ],
             "nodes": 10,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -568,11 +568,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 12,
+            "nodes": 14,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -656,8 +656,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1,
+            "nodes": 3,
             "firstTargets": [
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
               ".header-three"
             ]
           }
@@ -681,6 +683,20 @@
             "nodes": 1,
             "firstTargets": [
               ".d-lg-flex > form > .yellow-h[type=\"submit\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".mb-3"
             ]
           },
           {
@@ -717,7 +733,7 @@
             ]
           }
         ],
-        "violationTotal": 7,
+        "violationTotal": 8,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -727,11 +743,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -753,7 +769,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".navbar-nav.d-lg-flex.d-none > form > .yellow-h[type=\"submit\"]"
+              ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]"
             ]
           },
           {
@@ -785,7 +801,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".component:nth-child(11) > .mt-5.container > .row > .col-lg-8.col-12 > iframe[width=\"100%\"][height=\"750\"]"
+              ".component:nth-child(12) > .mt-5.container > .row > .col-lg-8.col-12 > iframe[width=\"100%\"][height=\"750\"]"
             ]
           },
           {
@@ -850,11 +866,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1083,
+            "nodes": 1085,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -941,11 +957,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1028,11 +1044,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1066,11 +1082,12 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 4,
+            "nodes": 5,
             "firstTargets": [
               ".mb-3 > p:nth-child(1) > strong",
-              ".forest-back.header-box > .header-two.mb-0",
-              ".forest-back.header-box > .header-three.mb-0",
+              ".mb-3 > p:nth-child(2)",
+              ".forest-back.header-box > .header-two.mb-0.ms-3",
+              ".forest-back.header-box > .header-three.mb-0.ms-3",
               "#accordion-d30e1194-c-d30e1263 > .accordion-body > p > .azure.btn[rel=\"noopener\"]"
             ]
           },
@@ -1108,7 +1125,7 @@
             ]
           }
         ],
-        "violationTotal": 11,
+        "violationTotal": 12,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -1118,11 +1135,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1191,11 +1208,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".header-three",
-              "omnicms-calendar,#hero-title",
-              "omnicms-calendar,#hero-subtitle"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".header-three"
             ]
           }
         ]
@@ -1264,11 +1281,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1304,7 +1321,7 @@
             ],
             "nodes": 4,
             "firstTargets": [
-              ".mb-0.header-three",
+              ".mb-0.header-three.ms-3",
               "p > span:nth-child(1)",
               "p > span:nth-child(2)",
               "span:nth-child(4)"
@@ -1383,11 +1400,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 48,
+            "nodes": 50,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -1402,7 +1419,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -1471,11 +1488,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1544,11 +1561,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 9,
+            "nodes": 11,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1617,11 +1634,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1690,11 +1707,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 10,
+            "nodes": 12,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1717,6 +1734,20 @@
             "nodes": 1,
             "firstTargets": [
               ".d-lg-flex > form > .yellow-h[type=\"submit\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".mb-3 > span"
             ]
           },
           {
@@ -1753,7 +1784,7 @@
             ]
           }
         ],
-        "violationTotal": 7,
+        "violationTotal": 8,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -1763,11 +1794,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 6,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              "h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           }
         ]
@@ -1850,11 +1881,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 14,
+            "nodes": 16,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -1953,11 +1984,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 13,
+            "nodes": 15,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2040,11 +2071,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2066,7 +2097,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".d-lg-flex.navbar-nav.d-none > form > .yellow-h[type=\"submit\"]"
+              ".d-lg-flex.navbar-nav.d-none > form > .yellow-h.btn[type=\"submit\"]"
             ]
           },
           {
@@ -2113,11 +2144,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2186,11 +2217,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -2203,7 +2234,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_04irvsf4i6ep"
+              "#html5_video_5ng9f8y6iiq"
             ]
           }
         ]
@@ -2272,8 +2303,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1,
+            "nodes": 3,
             "firstTargets": [
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
               "h2"
             ]
           }
@@ -2297,6 +2330,20 @@
             "nodes": 1,
             "firstTargets": [
               ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".azure-back > .mb-3"
             ]
           },
           {
@@ -2333,7 +2380,7 @@
             ]
           }
         ],
-        "violationTotal": 7,
+        "violationTotal": 8,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -2345,9 +2392,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "h2",
-              ".header-four",
-              ".azure-back > .mb-3"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              "h2"
             ]
           }
         ]
@@ -2431,11 +2478,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 12,
+            "nodes": 14,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2520,11 +2567,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2593,11 +2640,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2693,11 +2740,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 9,
+            "nodes": 11,
             "firstTargets": [
-              ".masthead-box > h2",
-              "iframe[title=\"Microsoft Form\"] .-cZ-150:nth-child(1)",
-              "iframe[title=\"Microsoft Form\"] .office-form-notice-report"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > h2"
             ]
           },
           {
@@ -2712,7 +2759,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-154 > .css-158",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-156[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-155 > .-h_-156[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--155 > .-h_-156[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -2735,6 +2782,20 @@
             "nodes": 1,
             "firstTargets": [
               ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".mb-3"
             ]
           },
           {
@@ -2771,7 +2832,7 @@
             ]
           }
         ],
-        "violationTotal": 7,
+        "violationTotal": 8,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -2781,11 +2842,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2854,11 +2915,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -2868,79 +2929,6 @@
         "title": "Privacy Policy | Pikes Peak State College",
         "finalUrl": "https://pikespeak.edu/administration-operations/disclaimers-legal-notices/privacy-policy.php",
         "slug": "administration-operations-disclaimers-legal-notices-privacy-policy-php",
-        "violations": [
-          {
-            "id": "button-name",
-            "impact": "critical",
-            "help": "Buttons must have discernible text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag412"
-            ],
-            "nodes": 1,
-            "firstTargets": [
-              ".d-lg-flex > form > .yellow-h[type=\"submit\"]"
-            ]
-          },
-          {
-            "id": "image-alt",
-            "impact": "critical",
-            "help": "Images must have alternative text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag111"
-            ],
-            "nodes": 1,
-            "firstTargets": [
-              "img[border=\"0\"]"
-            ]
-          },
-          {
-            "id": "link-name",
-            "impact": "serious",
-            "help": "Links must have discernible text",
-            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
-            "wcag": [
-              "wcag2a",
-              "wcag244",
-              "wcag412"
-            ],
-            "nodes": 5,
-            "firstTargets": [
-              ".facebook:nth-child(1)",
-              ".facebook:nth-child(2)",
-              ".facebook:nth-child(3)",
-              ".facebook:nth-child(4)",
-              "a[href$=\"pikespeakedu\"]"
-            ]
-          }
-        ],
-        "violationTotal": 7,
-        "incomplete": [
-          {
-            "id": "color-contrast",
-            "impact": "serious",
-            "help": "Elements must meet minimum color contrast ratio thresholds",
-            "wcag": [
-              "wcag2aa",
-              "wcag143"
-            ],
-            "nodes": 6,
-            "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
-            ]
-          }
-        ]
-      },
-      {
-        "url": "https://pikespeak.edu/administration-operations/facilities/index.php",
-        "title": "Facilities & Capital Projects | Pikes Peak State College",
-        "finalUrl": "https://pikespeak.edu/administration-operations/facilities/index.php",
-        "slug": "administration-operations-facilities-index-php",
         "violations": [
           {
             "id": "button-name",
@@ -3002,9 +2990,96 @@
             ],
             "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://pikespeak.edu/administration-operations/facilities/index.php",
+        "title": "Facilities & Capital Projects | Pikes Peak State College",
+        "finalUrl": "https://pikespeak.edu/administration-operations/facilities/index.php",
+        "slug": "administration-operations-facilities-index-php",
+        "violations": [
+          {
+            "id": "button-name",
+            "impact": "critical",
+            "help": "Buttons must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/button-name?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              ".d-lg-flex > form > .yellow-h.btn[type=\"submit\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-id=\"pageInfo\"] > .mb-3"
+            ]
+          },
+          {
+            "id": "image-alt",
+            "impact": "critical",
+            "help": "Images must have alternative text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag111"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "img[border=\"0\"]"
+            ]
+          },
+          {
+            "id": "link-name",
+            "impact": "serious",
+            "help": "Links must have discernible text",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-name?application=playwright",
+            "wcag": [
+              "wcag2a",
+              "wcag244",
+              "wcag412"
+            ],
+            "nodes": 5,
+            "firstTargets": [
+              ".facebook:nth-child(1)",
+              ".facebook:nth-child(2)",
+              ".facebook:nth-child(3)",
+              ".facebook:nth-child(4)",
+              "a[href$=\"pikespeakedu\"]"
+            ]
+          }
+        ],
+        "violationTotal": 8,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 9,
+            "firstTargets": [
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3073,8 +3148,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1,
+            "nodes": 3,
             "firstTargets": [
+              "h3",
+              ".oualerts-notify-msg",
               "h2"
             ]
           }
@@ -3146,9 +3223,9 @@
             ],
             "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3231,11 +3308,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 12,
+            "nodes": 14,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3304,11 +3381,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 16,
+            "nodes": 17,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3377,11 +3454,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3450,11 +3527,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3523,11 +3600,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3596,11 +3673,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 12,
+            "nodes": 14,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3687,10 +3764,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 2,
+            "nodes": 4,
             "firstTargets": [
-              "h2",
-              "#pageNumbers > .active"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              "h2"
             ]
           }
         ]
@@ -3759,10 +3837,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 2,
+            "nodes": 4,
             "firstTargets": [
-              "h2",
-              "#pageNumbers > .active"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              "h2"
             ]
           }
         ]
@@ -3846,11 +3925,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 10,
+            "nodes": 12,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -3966,11 +4045,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 45,
+            "nodes": 47,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -3985,7 +4064,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-223 > .css-227",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -4085,9 +4164,9 @@
             ],
             "nodes": 56,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -4102,7 +4181,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -4200,11 +4279,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 49,
+            "nodes": 51,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -4219,7 +4298,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -4288,11 +4367,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -4374,11 +4453,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 3,
+            "nodes": 5,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".header-three"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           }
         ]
@@ -4476,11 +4555,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 52,
+            "nodes": 54,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -4495,7 +4574,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-223 > .css-227",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -4608,11 +4687,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 49,
+            "nodes": 50,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -4627,7 +4706,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-223 > .css-227",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -4650,6 +4729,20 @@
             "nodes": 1,
             "firstTargets": [
               ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]"
+            ]
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+            "wcag": [
+              "wcag2aa",
+              "wcag143"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "div[data-id=\"pageInfo\"] > .mb-3"
             ]
           },
           {
@@ -4686,7 +4779,7 @@
             ]
           }
         ],
-        "violationTotal": 7,
+        "violationTotal": 8,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -4696,11 +4789,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -4722,10 +4815,10 @@
             ],
             "nodes": 4,
             "firstTargets": [
-              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 input[aria-controls=\"form_510_list\"]",
-              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 input[aria-controls=\"form_511_list\"]",
-              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 input[aria-controls=\"form_515_list\"]",
-              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 input[aria-controls=\"form_514_list\"]"
+              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 input[aria-controls=\"form_510_list\"][aria-labelledby=\"form_510_label\"][aria-autocomplete=\"off\"]",
+              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 input[aria-controls=\"form_511_list\"][aria-labelledby=\"form_511_label\"][aria-autocomplete=\"off\"]",
+              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 .default[aria-controls=\"form_515_list\"][aria-required=\"false\"]",
+              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 .default[aria-controls=\"form_514_list\"][aria-required=\"false\"]"
             ]
           },
           {
@@ -4801,9 +4894,11 @@
               "wcag2a",
               "wcag412"
             ],
-            "nodes": 1,
+            "nodes": 6,
             "firstTargets": [
-              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 .selected-flag"
+              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 .selectize-control",
+              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 div[aria-owns=\"form_510_list\"]",
+              "#gecko-form-iframe-embed-22FO00w7theu8s005vz2cqnxe2 div[aria-owns=\"form_511_list\"]"
             ]
           },
           {
@@ -4814,11 +4909,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 12,
+            "nodes": 14,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -4921,7 +5016,7 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "iframe[title=\"Microsoft Form\"] .css-261",
+              "iframe[title=\"Microsoft Form\"] .css-248",
               "iframe[title=\"Microsoft Form\"] #question-list"
             ]
           },
@@ -4933,11 +5028,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 39,
+            "nodes": 40,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -4950,9 +5045,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "iframe[title=\"Microsoft Form\"] .-rA-242 > .css-246",
-              "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-rA-257 > .css-261",
+              "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-259[rel=\"noreferrer\"][target=\"_blank\"]",
+              "iframe[title=\"Microsoft Form\"] .-x--258 > .-h_-259[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -5067,11 +5162,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 41,
+            "nodes": 43,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -5086,7 +5181,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-228 > .css-232",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-229 > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--229 > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -5201,11 +5296,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 41,
+            "nodes": 43,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -5220,7 +5315,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-228 > .css-232",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-229 > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--229 > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -5254,13 +5349,13 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 7,
             "firstTargets": [
               ".azure-back > .mb-3",
               ".mb-3 > span:nth-child(1)",
               ".mb-3 > em",
               "span:nth-child(3)",
-              "strong > span"
+              ".mb-3 > strong"
             ]
           },
           {
@@ -5297,7 +5392,7 @@
             ]
           }
         ],
-        "violationTotal": 13,
+        "violationTotal": 14,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -5309,9 +5404,9 @@
             ],
             "nodes": 10,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > .header-three"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           }
         ]
@@ -5333,9 +5428,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\38 55907412 .ytmVideoInfoVideoTitle",
-              "#\\31 50230573 .ytmVideoInfoVideoTitle",
-              "#\\35 93709989 .ytmVideoInfoVideoTitle"
+              "#\\37 23392003 .ytmVideoInfoVideoTitle",
+              "#\\38 59758798 .ytmVideoInfoVideoTitle",
+              "#\\34 45938834 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -5349,9 +5444,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\38 55907412 #movie_player",
-              "#\\31 50230573 #movie_player",
-              "#\\35 93709989 #movie_player"
+              "#\\37 23392003 #movie_player",
+              "#\\38 59758798 #movie_player",
+              "#\\34 45938834 #movie_player"
             ]
           },
           {
@@ -5366,9 +5461,9 @@
             "nodes": 4,
             "firstTargets": [
               ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]",
-              "#\\38 55907412 .ytmVideoInfoChannelAvatar",
-              "#\\31 50230573 .ytmVideoInfoChannelAvatar",
-              "#\\35 93709989 .ytmVideoInfoChannelAvatar"
+              "#\\37 23392003 .ytmVideoInfoChannelAvatar",
+              "#\\38 59758798 .ytmVideoInfoChannelAvatar",
+              "#\\34 45938834 .ytmVideoInfoChannelAvatar"
             ]
           },
           {
@@ -5430,11 +5525,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 11,
+            "nodes": 13,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -5521,11 +5616,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -5640,11 +5735,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 35,
+            "nodes": 37,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -5659,7 +5754,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-228 > .css-232",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-229 > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--229 > .-h_-230[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -5746,11 +5841,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -5832,11 +5927,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -5905,11 +6000,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 13,
+            "nodes": 15,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > .header-three"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -5922,7 +6017,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_wmnfva5woba"
+              "#html5_video_g6pbbitm8y7"
             ]
           }
         ]
@@ -5959,7 +6054,7 @@
             "nodes": 2,
             "firstTargets": [
               ".header-four",
-              ".forest-back > .header-two.mb-0"
+              ".forest-back > .header-two.mb-0.ms-3"
             ]
           },
           {
@@ -6006,11 +6101,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 3,
+            "nodes": 5,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           }
         ]
@@ -6079,11 +6174,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box > .header-three",
-              "omnicms-calendar,#hero-title",
-              "omnicms-calendar,#hero-subtitle"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > .header-three"
             ]
           }
         ]
@@ -6199,11 +6294,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 40,
+            "nodes": 42,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              "h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -6218,7 +6313,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-223 > .css-227",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--224 > .-h_-225[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -6303,11 +6398,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -6418,11 +6513,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 49,
+            "nodes": 51,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -6437,7 +6532,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -6506,11 +6601,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -6596,11 +6691,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -6634,7 +6729,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 17,
+            "nodes": 18,
             "firstTargets": [
               ".mb-3 > strong:nth-child(1)",
               ".mb-3 > ul:nth-child(2) > li:nth-child(1)",
@@ -6677,7 +6772,7 @@
             ]
           }
         ],
-        "violationTotal": 24,
+        "violationTotal": 25,
         "incomplete": [
           {
             "id": "aria-prohibited-attr",
@@ -6713,11 +6808,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 31,
+            "nodes": 32,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -6759,7 +6854,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-210 > .css-214",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-212[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-211 > .-h_-212[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--211 > .-h_-212[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           },
           {
@@ -6772,7 +6867,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_8jeczjq415n"
+              "#html5_video_pn8dvp6cod"
             ]
           }
         ]
@@ -6841,11 +6936,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 14,
+            "nodes": 16,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -6858,7 +6953,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_1ogdqc71svr"
+              "#html5_video_zhc9czat7pm"
             ]
           }
         ]
@@ -6927,11 +7022,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -7000,11 +7095,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 10,
             "firstTargets": [
-              "h2",
-              ".col-xl-6.col-12:nth-child(1) > .author-box.mb-4 > div > h3",
-              ".col-xl-6.col-12:nth-child(2) > .author-box.mb-4 > div > h3"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              "h2"
             ]
           }
         ]
@@ -7073,11 +7168,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 11,
+            "nodes": 12,
             "firstTargets": [
-              ".masthead-box > h2",
-              ".tango-back > .mb-3",
-              ".design-rangers:nth-child(13) > .ppsc-section-space-default.bkd-white > .ppsc-media-and-content-w-pattern > .container > .row > .col-lg-6.ppsc-content-container.pb-4 > h3"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > h2"
             ]
           }
         ]
@@ -7161,11 +7256,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box > .header-three",
-              ".ppsc-col-extra-y-p > .header-three.navy",
-              ".pb-4 > .header-three.navy"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > .header-three"
             ]
           },
           {
@@ -7178,7 +7273,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_znki0dzls69"
+              "#html5_video_bub51rbacfg"
             ]
           }
         ]
@@ -7262,11 +7357,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box > .header-three",
-              ".ppsc-col-extra-y-p > .header-three.navy",
-              ".pb-4 > .header-three.navy"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > .header-three"
             ]
           },
           {
@@ -7279,7 +7374,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_n9hzvi8ntlr"
+              "#html5_video_xsnmgqoddk"
             ]
           }
         ]
@@ -7363,11 +7458,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 6,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box > .header-three",
-              ".ppsc-col-extra-y-p > .header-three.navy",
-              ".pb-4 > .header-three.navy"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > .header-three"
             ]
           },
           {
@@ -7380,7 +7475,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_d79kvnwsxpr"
+              "#html5_video_xi0ry1o5l6"
             ]
           }
         ]
@@ -7416,7 +7511,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".design-rangers:nth-child(11) > .neutral-extra-light > .neutral-extra-light.container > .row > .col-xl-10.col-lg-12.offset-lg-0 > .ppsc-pathway-overview-box > .pathway-box-content-container > .pathway-box-career-container > .pathway-career-title"
+              ".design-rangers:nth-child(12) > .neutral-extra-light > .neutral-extra-light.container > .row > .col-xl-10.col-lg-12.offset-lg-0 > .ppsc-pathway-overview-box > .pathway-box-content-container > .pathway-box-career-container > .pathway-career-title"
             ]
           },
           {
@@ -7463,11 +7558,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box > .header-three",
-              ".header-six",
-              ".pb-4.header-three"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > .header-three"
             ]
           },
           {
@@ -7480,7 +7575,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_9muomhe49j"
+              "#html5_video_refooso6ju"
             ]
           }
         ]
@@ -7564,11 +7659,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box > .header-three",
-              ".ppsc-col-extra-y-p > .header-three.navy",
-              "#moderncampuspathwayswidgetmqa2x0p00pndx95noelb,#accordion-heading-3 > .title > .amount[data-change=\"topOccupations-salary\"]"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > .header-three"
             ]
           },
           {
@@ -7581,7 +7676,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_pgbopyq4t2n"
+              "#html5_video_voqbxsovthf"
             ]
           }
         ]
@@ -7665,11 +7760,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 9,
             "firstTargets": [
-              ".masthead-box > .header-three",
-              ".ppsc-col-extra-y-p > .header-three.navy",
-              "#moderncampuspathwayswidgetmqa2vmwdfvmx65x50ss,#accordion-heading-0 > .title > .amount[data-change=\"topOccupations-salary\"]"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > .header-three"
             ]
           },
           {
@@ -7682,7 +7777,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_p9ywng9yqt9"
+              "#html5_video_4dncey2jajt"
             ]
           }
         ]
@@ -7780,11 +7875,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 52,
+            "nodes": 54,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -7799,7 +7894,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -7897,11 +7992,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 50,
+            "nodes": 52,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -7916,7 +8011,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           },
           {
@@ -7929,7 +8024,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_ns79eeyw5w"
+              "#html5_video_6p9sq82r9vg"
             ]
           }
         ]
@@ -8027,11 +8122,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 47,
+            "nodes": 49,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > h2"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -8046,7 +8141,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -8146,10 +8241,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 2,
+            "nodes": 4,
             "firstTargets": [
-              ".masthead-box > h2",
-              "#pageNumbers > .active"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > h2"
             ]
           }
         ]
@@ -8236,9 +8332,9 @@
             ],
             "nodes": 13,
             "firstTargets": [
-              "#moderncampuspathwayswidgetmshxlsa8jnxj7iwfdt,div[data-change=\"overview-current\"]",
-              "#moderncampuspathwayswidgetmshxlsa8jnxj7iwfdt,div[data-change=\"overview-salary\"]",
-              "#moderncampuspathwayswidgetmshxlsa8jnxj7iwfdt,div[data-change=\"overview-postings\"]"
+              "#moderncampuspathwayswidgetmtkew3y2otkpl0hk4ib,div[data-change=\"overview-current\"]",
+              "#moderncampuspathwayswidgetmtkew3y2otkpl0hk4ib,div[data-change=\"overview-salary\"]",
+              "#moderncampuspathwayswidgetmtkew3y2otkpl0hk4ib,div[data-change=\"overview-postings\"]"
             ]
           },
           {
@@ -8263,11 +8359,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 47,
+            "nodes": 49,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > .header-three"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -8282,7 +8378,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-242 > .css-246",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -8393,11 +8489,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 26,
+            "nodes": 28,
             "firstTargets": [
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".current",
-              ".masthead-box > .header-three"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box > a[href$=\"pikespeak.edu/\"]"
             ]
           },
           {
@@ -8412,7 +8508,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft\"] .-rA-209 > .css-213",
               "iframe[title=\"Microsoft\"] span:nth-child(3) > .-h_-211[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft\"] .-x_-210 > .-h_-211[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft\"] .-x--210 > .-h_-211[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           }
         ]
@@ -8446,11 +8542,13 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 3,
+            "nodes": 5,
             "firstTargets": [
-              ".purple > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0",
-              ".component > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0",
-              ".no-curve > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0"
+              "p:nth-child(1) > span",
+              "p:nth-child(2) > span",
+              ".purple > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0.ms-3",
+              ".component > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0.ms-3",
+              ".no-curve > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0.ms-3"
             ]
           },
           {
@@ -8487,7 +8585,7 @@
             ]
           }
         ],
-        "violationTotal": 10,
+        "violationTotal": 12,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -8499,9 +8597,9 @@
             ],
             "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -8523,7 +8621,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".navbar-nav.d-lg-flex.d-none > form > .yellow-h[type=\"submit\"]"
+              ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]"
             ]
           },
           {
@@ -8572,9 +8670,9 @@
             ],
             "nodes": 5,
             "firstTargets": [
-              "h2",
-              ".mx-0.mx-xl-auto:nth-child(2) > a",
-              ".mx-0.mx-xl-auto:nth-child(4) > a"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              "h2"
             ]
           },
           {
@@ -8687,11 +8785,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 17,
+            "nodes": 19,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -8706,7 +8804,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-157 > .css-161",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-159[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-158 > .-h_-159[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--158 > .-h_-159[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           },
           {
@@ -8817,11 +8915,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 18,
+            "nodes": 20,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           },
           {
@@ -8836,7 +8934,7 @@
             "firstTargets": [
               "iframe[title=\"Microsoft Form\"] .-rA-157 > .css-161",
               "iframe[title=\"Microsoft Form\"] span:nth-child(3) > .-h_-159[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft Form\"] .-x_-158 > .-h_-159[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft Form\"] .-x--158 > .-h_-159[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           },
           {
@@ -8919,8 +9017,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1,
+            "nodes": 3,
             "firstTargets": [
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
               "h2"
             ]
           }
@@ -9004,11 +9104,24 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 9,
+            "nodes": 12,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "iframe[frameborder=\"0\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
             ]
           }
         ]
@@ -9030,7 +9143,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              ".d-lg-flex.navbar-nav.d-none > form > .yellow-h[type=\"submit\"]"
+              ".d-lg-flex.navbar-nav.d-none > form > .yellow-h.btn[type=\"submit\"]"
             ]
           },
           {
@@ -9093,8 +9206,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1,
+            "nodes": 3,
             "firstTargets": [
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
               ".masthead-box > h2"
             ]
           }
@@ -9131,11 +9246,11 @@
             ],
             "nodes": 5,
             "firstTargets": [
-              ".component:nth-child(4) > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0.ms-3",
+              ".component:nth-child(5) > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0.ms-3",
               ".lawn > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0.ms-3",
               ".gold > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0.ms-3",
               ".lemon > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0.ms-3",
-              ".component:nth-child(9) > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0.ms-3"
+              ".component:nth-child(10) > .container > .row > .col-lg-7.col-12 > .flex-promo > .forest-back.header-box > .header-two.mb-0.ms-3"
             ]
           },
           {
@@ -9182,11 +9297,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 7,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -9269,11 +9384,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 9,
+            "nodes": 11,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -9356,11 +9471,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 13,
+            "nodes": 15,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]
@@ -9396,10 +9511,10 @@
             ],
             "nodes": 4,
             "firstTargets": [
-              ".curve-offset.curve:nth-child(5) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0",
-              ".curve-offset.curve:nth-child(7) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0",
-              ".curve-offset.curve:nth-child(8) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0",
-              ".curve-offset.curve:nth-child(9) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0"
+              ".curve-offset.curve:nth-child(6) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0.ms-3",
+              ".curve-offset.curve:nth-child(8) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0.ms-3",
+              ".curve-offset.curve:nth-child(9) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0.ms-3",
+              ".curve-offset.curve:nth-child(10) > .container > .row > .col-lg-6.col-12 > .forest-back.header-box > .header-two.mb-0.ms-3"
             ]
           },
           {
@@ -9446,10 +9561,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 2,
+            "nodes": 4,
             "firstTargets": [
-              "h2",
-              "ul:nth-child(26) > li"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              "h2"
             ]
           }
         ]
@@ -9483,9 +9599,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1,
+            "nodes": 2,
             "firstTargets": [
-              ".header-four"
+              ".header-four",
+              ".forest-back > .mb-3"
             ]
           },
           {
@@ -9522,7 +9639,7 @@
             ]
           }
         ],
-        "violationTotal": 8,
+        "violationTotal": 9,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -9532,11 +9649,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 8,
             "firstTargets": [
-              ".masthead-box",
-              ".masthead-box > a[href$=\"pikespeak.edu/\"]",
-              ".masthead-box > a:nth-child(2)"
+              ".oualerts-notify-title",
+              ".oualerts-notify-msg",
+              ".masthead-box"
             ]
           }
         ]

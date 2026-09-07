@@ -103,7 +103,7 @@
                     <br />
                 </div>
             </div>
-            <h2>axe-core found <span class="badge badge-warning">13</span> violations</h2>
+            <h2>axe-core found <span class="badge badge-warning">14</span> violations</h2>
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
@@ -130,7 +130,7 @@
                         <td>color-contrast</td>
                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
                         <td>serious</td>
-                        <td>6</td>
+                        <td>7</td>
                     </tr>
                     <tr>
                         <th scope="row"><a href="#3" class="card-link">3</a></th>
@@ -385,6 +385,25 @@
                                     <td>5</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
+                                        <pre><code class="css text-wrap">.mb-3 &gt; strong</code></pre>
+                                        <p><strong>Element source</strong></p>
+                                        <pre><code class="html text-wrap">&lt;strong&gt;All students new to college &lt;span style&#x3D;&quot;text-decoration: underline;&quot;&gt;MUST&lt;&#x2F;span&gt; complete the orientation before registering for their first term of classes.&lt;br&gt;&lt;br&gt;&lt;&#x2F;strong&gt;</code></pre>
+                                    </td>
+                                    <td>
+                                        <div class="wrapBreakWord">
+                                            <p>Fix any of the following:</p>
+                                            <ul class="text-muted">
+                                                <li>  Element has insufficient color contrast of 4.35 (foreground color: #ffffff, background color: #0384a2, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                            </ul>
+                                        </div>
+                                        <p><strong>Related node:</strong></p>
+                                        <pre><code class="css text-wrap">.azure-back</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">strong &gt; span</code></pre>
                                         <p><strong>Element source</strong></p>
                                         <pre><code class="html text-wrap">&lt;span style&#x3D;&quot;text-decoration: underline;&quot;&gt;MUST&lt;&#x2F;span&gt;</code></pre>
@@ -401,7 +420,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>6</td>
+                                    <td>7</td>
                                     <td>
                                         <p><strong>Element location</strong></p>
                                         <pre><code class="css text-wrap">span &gt; strong</code></pre>
@@ -775,7 +794,7 @@
                                         <td>Deprecated ARIA roles must not be used</td>
                                         <td>aria-deprecated-role</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>12</td>
+                                        <td>13</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">4</th>
@@ -803,14 +822,14 @@
                                         <td>Required ARIA attributes must be provided</td>
                                         <td>aria-required-attr</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>12</td>
+                                        <td>13</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">8</th>
                                         <td>ARIA roles used must conform to valid values</td>
                                         <td>aria-roles</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>12</td>
+                                        <td>13</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">9</th>
@@ -831,14 +850,14 @@
                                         <td>Inline text spacing must be adjustable with custom stylesheets</td>
                                         <td>avoid-inline-spacing</td>
                                         <td>WCAG 2.1 Level AA, WCAG 1.4.1.2</td>
-                                        <td>21</td>
+                                        <td>22</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">12</th>
                                         <td>Buttons must have discernible text</td>
                                         <td>button-name</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>11</td>
+                                        <td>12</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">13</th>
@@ -852,7 +871,7 @@
                                         <td>Elements must meet minimum color contrast ratio thresholds</td>
                                         <td>color-contrast</td>
                                         <td>WCAG 2 Level AA, WCAG 1.4.3</td>
-                                        <td>148</td>
+                                        <td>150</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">15</th>
@@ -943,7 +962,7 @@
                                         <td>Interactive controls must not be nested</td>
                                         <td>nested-interactive</td>
                                         <td>WCAG 2 Level A, WCAG 4.1.2</td>
-                                        <td>30</td>
+                                        <td>31</td>
                                     </tr>
                                 </tbody>
                             </table>
