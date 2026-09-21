@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-09-14T11:46:53.345Z",
+  "siteGenerated": "2026-09-21T12:00:16.707Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-pikespeak.edu",
   "report": {
-    "generated": "2026-09-14T11:46:52.632Z",
+    "generated": "2026-09-21T12:00:15.649Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -207,7 +207,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_u1zw2sxh4l"
+              "#html5_video_469mo6snyu7"
             ]
           }
         ]
@@ -850,7 +850,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1100,
+            "nodes": 1099,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -1118,7 +1118,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 7,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -2203,7 +2203,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_211cpf2til1"
+              "#html5_video_65bq7yirtjt"
             ]
           }
         ]
@@ -3966,7 +3966,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 46,
+            "nodes": 45,
             "firstTargets": [
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
               ".current",
@@ -5335,9 +5335,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\31 84603977 .ytmVideoInfoVideoTitle",
-              "#\\32 74247850 .ytmVideoInfoVideoTitle",
-              "#\\36 87212969 .ytmVideoInfoVideoTitle"
+              "#\\38 26976460 .ytmVideoInfoVideoTitle",
+              "#\\37 16309197 .ytmVideoInfoVideoTitle",
+              "#\\34 84613060 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -5351,9 +5351,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\31 84603977 #movie_player",
-              "#\\32 74247850 #movie_player",
-              "#\\36 87212969 #movie_player"
+              "#\\38 26976460 #movie_player",
+              "#\\37 16309197 #movie_player",
+              "#\\34 84613060 #movie_player"
             ]
           },
           {
@@ -5368,9 +5368,9 @@
             "nodes": 4,
             "firstTargets": [
               ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]",
-              "#\\31 84603977 .ytmVideoInfoChannelAvatar",
-              "#\\32 74247850 .ytmVideoInfoChannelAvatar",
-              "#\\36 87212969 .ytmVideoInfoChannelAvatar"
+              "#\\38 26976460 .ytmVideoInfoChannelAvatar",
+              "#\\37 16309197 .ytmVideoInfoChannelAvatar",
+              "#\\34 84613060 .ytmVideoInfoChannelAvatar"
             ]
           },
           {
@@ -5924,7 +5924,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_m0is6yckgkn"
+              "#html5_video_k0hqoujvj5h"
             ]
           }
         ]
@@ -6305,7 +6305,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 9,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -6546,9 +6546,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 3,
+            "nodes": 4,
             "firstTargets": [
               "div[data-id=\"pageInfo\"] > .mb-3 > p:nth-child(1)",
+              "div[data-id=\"pageInfo\"] > .mb-3 > p:nth-child(2)",
               "div[data-id=\"pageInfo\"] > .mb-3 > p:nth-child(2) > strong:nth-child(1)",
               "strong:nth-child(6)"
             ]
@@ -6587,7 +6588,7 @@
             ]
           }
         ],
-        "violationTotal": 10,
+        "violationTotal": 11,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -6597,7 +6598,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 7,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -6731,7 +6732,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "div:nth-child(3) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][data-ready=\"true\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
+              "iframe[data-ready=\"true\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
             ]
           },
           {
@@ -6744,8 +6745,8 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "div:nth-child(3) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][data-ready=\"true\"]",
-              "div:nth-child(2) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][data-ready=\"true\"]"
+              "div:nth-child(3) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][frameborder=\"0\"]",
+              "iframe[data-ready=\"true\"]"
             ]
           },
           {
@@ -6773,7 +6774,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_ys1jqxt5vt"
+              "#html5_video_1s6j1fzbo0x"
             ]
           }
         ]
@@ -6859,7 +6860,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_2t6giqakp14"
+              "#html5_video_ywmnkm1i8zh"
             ]
           }
         ]
@@ -7179,7 +7180,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_3a9k2pigs8f"
+              "#html5_video_2zo27igupad"
             ]
           }
         ]
@@ -7280,7 +7281,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_4mn9amcreo"
+              "#html5_video_9vk01c61n9g"
             ]
           }
         ]
@@ -7381,7 +7382,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_oquo94h0km"
+              "#html5_video_v69znz543p"
             ]
           }
         ]
@@ -7481,7 +7482,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_3aphpvxkusx"
+              "#html5_video_jlcdjlhjmfg"
             ]
           }
         ]
@@ -7552,9 +7553,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#moderncampuspathwayswidgetmqa2x0p00pndx95noelb,div[data-change=\"overview-current\"]",
-              "#moderncampuspathwayswidgetmqa2x0p00pndx95noelb,div[data-change=\"overview-salary\"]",
-              "#moderncampuspathwayswidgetmqa2x0p00pndx95noelb,div[data-change=\"overview-postings\"]"
+              "#moderncampuspathwayswidgetmu5u2qpyayjgai39wlc,div[data-change=\"overview-current\"]",
+              "#moderncampuspathwayswidgetmu5u2qpyayjgai39wlc,div[data-change=\"overview-salary\"]",
+              "#moderncampuspathwayswidgetmu5u2qpyayjgai39wlc,div[data-change=\"overview-postings\"]"
             ]
           },
           {
@@ -7565,11 +7566,11 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 7,
+            "nodes": 6,
             "firstTargets": [
               ".masthead-box > .header-three",
               ".ppsc-col-extra-y-p > .header-three.navy",
-              "#moderncampuspathwayswidgetmqa2x0p00pndx95noelb,#accordion-heading-3 > .title > .amount[data-change=\"topOccupations-salary\"]"
+              ".pb-4 > .header-three.navy"
             ]
           },
           {
@@ -7582,7 +7583,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_1lon7exsvq7i"
+              "#html5_video_sgyenbvl7u"
             ]
           }
         ]
@@ -7683,7 +7684,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_1mmqg8q80j9"
+              "#html5_video_j2n6nfc1ed"
             ]
           }
         ]
@@ -7930,7 +7931,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_8rgqwsjg645"
+              "#html5_video_10l189nulhko"
             ]
           }
         ]
