@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-09-21T12:00:16.707Z",
+  "siteGenerated": "2026-09-28T12:54:50.518Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-pikespeak.edu",
   "report": {
-    "generated": "2026-09-21T12:00:15.649Z",
+    "generated": "2026-09-28T12:54:49.671Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -207,7 +207,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_469mo6snyu7"
+              "#html5_video_xnixb9a7ie"
             ]
           }
         ]
@@ -2203,7 +2203,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_65bq7yirtjt"
+              "#html5_video_bkt8vcgqww5"
             ]
           }
         ]
@@ -5256,13 +5256,13 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 5,
+            "nodes": 6,
             "firstTargets": [
+              ".azure-back > .mb-3",
               ".mb-3 > span:nth-child(1)",
               ".mb-3 > em",
               "span:nth-child(3)",
-              "strong > span",
-              "span > strong"
+              "strong > span"
             ]
           },
           {
@@ -5299,7 +5299,7 @@
             ]
           }
         ],
-        "violationTotal": 12,
+        "violationTotal": 13,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -5309,7 +5309,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 11,
+            "nodes": 10,
             "firstTargets": [
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
               ".current",
@@ -5335,9 +5335,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\38 26976460 .ytmVideoInfoVideoTitle",
-              "#\\37 16309197 .ytmVideoInfoVideoTitle",
-              "#\\34 84613060 .ytmVideoInfoVideoTitle"
+              "#\\33 70698520 .ytmVideoInfoVideoTitle",
+              "#\\39 08995690 .ytmVideoInfoVideoTitle",
+              "#\\31 04219917 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -5351,9 +5351,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\38 26976460 #movie_player",
-              "#\\37 16309197 #movie_player",
-              "#\\34 84613060 #movie_player"
+              "#\\33 70698520 #movie_player",
+              "#\\39 08995690 #movie_player",
+              "#\\31 04219917 #movie_player"
             ]
           },
           {
@@ -5368,9 +5368,9 @@
             "nodes": 4,
             "firstTargets": [
               ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]",
-              "#\\38 26976460 .ytmVideoInfoChannelAvatar",
-              "#\\37 16309197 .ytmVideoInfoChannelAvatar",
-              "#\\34 84613060 .ytmVideoInfoChannelAvatar"
+              "#\\33 70698520 .ytmVideoInfoChannelAvatar",
+              "#\\39 08995690 .ytmVideoInfoChannelAvatar",
+              "#\\31 04219917 .ytmVideoInfoChannelAvatar"
             ]
           },
           {
@@ -5924,7 +5924,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_k0hqoujvj5h"
+              "#html5_video_rlahtba28k"
             ]
           }
         ]
@@ -6305,7 +6305,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 9,
+            "nodes": 8,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -6732,7 +6732,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "iframe[data-ready=\"true\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
+              "div:nth-child(3) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][data-ready=\"true\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
             ]
           },
           {
@@ -6745,8 +6745,8 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "div:nth-child(3) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][frameborder=\"0\"]",
-              "iframe[data-ready=\"true\"]"
+              "div:nth-child(3) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][data-ready=\"true\"]",
+              "div:nth-child(2) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][data-ready=\"true\"]"
             ]
           },
           {
@@ -6774,7 +6774,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_1s6j1fzbo0x"
+              "#html5_video_j3w4uodja2d"
             ]
           }
         ]
@@ -6860,7 +6860,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_ywmnkm1i8zh"
+              "#html5_video_3ppcrme9gci"
             ]
           }
         ]
@@ -7180,7 +7180,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_2zo27igupad"
+              "#html5_video_l54a7a8nep"
             ]
           }
         ]
@@ -7281,7 +7281,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_9vk01c61n9g"
+              "#html5_video_tbayj9w72lq"
             ]
           }
         ]
@@ -7382,7 +7382,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_v69znz543p"
+              "#html5_video_wwhdbd96bc9"
             ]
           }
         ]
@@ -7482,7 +7482,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_jlcdjlhjmfg"
+              "#html5_video_ifxlwgypcb"
             ]
           }
         ]
@@ -7553,9 +7553,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#moderncampuspathwayswidgetmu5u2qpyayjgai39wlc,div[data-change=\"overview-current\"]",
-              "#moderncampuspathwayswidgetmu5u2qpyayjgai39wlc,div[data-change=\"overview-salary\"]",
-              "#moderncampuspathwayswidgetmu5u2qpyayjgai39wlc,div[data-change=\"overview-postings\"]"
+              "#moderncampuspathwayswidgetmuhgho0byoe5s8b3r2,div[data-change=\"overview-current\"]",
+              "#moderncampuspathwayswidgetmuhgho0byoe5s8b3r2,div[data-change=\"overview-salary\"]",
+              "#moderncampuspathwayswidgetmuhgho0byoe5s8b3r2,div[data-change=\"overview-postings\"]"
             ]
           },
           {
@@ -7583,7 +7583,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_sgyenbvl7u"
+              "#html5_video_z135q0qv5uq"
             ]
           }
         ]
@@ -7684,7 +7684,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_j2n6nfc1ed"
+              "#html5_video_s375ypf6"
             ]
           }
         ]
@@ -7887,7 +7887,7 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "iframe[title=\"Microsoft\"] .css-261",
+              "iframe[title=\"Microsoft\"] .css-248",
               "iframe[title=\"Microsoft\"] #question-list"
             ]
           },
@@ -7916,9 +7916,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "iframe[title=\"Microsoft\"] .-rA-242 > .css-246",
-              "iframe[title=\"Microsoft\"] span:nth-child(3) > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]",
-              "iframe[title=\"Microsoft\"] .-x--243 > .-h_-244[rel=\"noreferrer\"][target=\"_blank\"]"
+              "iframe[title=\"Microsoft\"] .-rA-257 > .css-261",
+              "iframe[title=\"Microsoft\"] span:nth-child(3) > .-h_-259[rel=\"noreferrer\"][target=\"_blank\"]",
+              "iframe[title=\"Microsoft\"] .-x--258 > .-h_-259[rel=\"noreferrer\"][target=\"_blank\"]"
             ]
           },
           {
@@ -7931,7 +7931,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_10l189nulhko"
+              "#html5_video_tio8zy8ybui"
             ]
           }
         ]
@@ -8238,9 +8238,9 @@
             ],
             "nodes": 13,
             "firstTargets": [
-              "#moderncampuspathwayswidgetmtkew3y2otkpl0hk4ib,div[data-change=\"overview-current\"]",
-              "#moderncampuspathwayswidgetmtkew3y2otkpl0hk4ib,div[data-change=\"overview-salary\"]",
-              "#moderncampuspathwayswidgetmtkew3y2otkpl0hk4ib,div[data-change=\"overview-postings\"]"
+              "#moderncampuspathwayswidgetmufr0yz7gemcewmn6ia,div[data-change=\"overview-current\"]",
+              "#moderncampuspathwayswidgetmufr0yz7gemcewmn6ia,div[data-change=\"overview-salary\"]",
+              "#moderncampuspathwayswidgetmufr0yz7gemcewmn6ia,div[data-change=\"overview-postings\"]"
             ]
           },
           {
@@ -8808,7 +8808,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "iframe[title=\"Microsoft Form\"] #form-main-content1 > .css-117 > .-ku-118 > .-pv-119:nth-child(1) > .-oC-142 > .-_-136 > .css-170 > .css-173[aria-label=\"Form Menu\"][aria-haspopup=\"true\"]"
+              "iframe[title=\"Microsoft Form\"] #form-main-content1 > .css-115 > .-ku-116 > .-pv-117:nth-child(1) > .-oC-142 > .-_-136 > .css-170 > .css-173[aria-label=\"Form Menu\"][aria-haspopup=\"true\"]"
             ]
           },
           {
@@ -8851,8 +8851,8 @@
             ],
             "nodes": 2,
             "firstTargets": [
-              "iframe[title=\"Microsoft Form\"] foreignobject > div > .css-117 > .css-164 > .css-122[aria-hidden=\"true\"] > video",
-              "iframe[title=\"Microsoft Form\"] #form-main-content1 > .css-117 > .css-164 > .css-122[aria-hidden=\"true\"] > video"
+              "iframe[title=\"Microsoft Form\"] foreignobject > div > .css-115 > .css-164 > .css-120[aria-hidden=\"true\"] > video",
+              "iframe[title=\"Microsoft Form\"] #form-main-content1 > .css-115 > .css-164 > .css-120[aria-hidden=\"true\"] > video"
             ]
           }
         ]
