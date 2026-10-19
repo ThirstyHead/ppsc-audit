@@ -1,8 +1,8 @@
 {
-  "siteGenerated": "2026-10-12T14:28:34.600Z",
+  "siteGenerated": "2026-10-19T12:10:14.735Z",
   "sourceRepo": "https://github.com/ThirstyHead/audit-pikespeak.edu",
   "report": {
-    "generated": "2026-10-12T14:28:33.650Z",
+    "generated": "2026-10-19T12:10:13.896Z",
     "tags": [
       "wcag2a",
       "wcag2aa",
@@ -207,7 +207,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_629jrspqznl"
+              "#html5_video_0f103tu2xizl"
             ]
           }
         ]
@@ -830,17 +830,14 @@
               "wcag2a",
               "wcag111"
             ],
-            "nodes": 8,
+            "nodes": 2,
             "firstTargets": [
-              "iframe[title=\"Centennial Campus Map\"] .app-icon",
-              "iframe[title=\"Centennial Campus Map\"] .logo",
-              "iframe[title=\"Rampart Range Map\"] .app-icon",
-              "iframe[title=\"Rampart Range Map\"] .logo",
-              "iframe[title=\"Studio West Campus Map\"] .app-icon"
+              ".component:nth-child(11) > .mt-5.container > .row > .col-lg-8.col-12 > iframe[width=\"100%\"][height=\"750\"] .app-icon",
+              ".component:nth-child(11) > .mt-5.container > .row > .col-lg-8.col-12 > iframe[width=\"100%\"][height=\"750\"] .logo"
             ]
           }
         ],
-        "violationTotal": 23,
+        "violationTotal": 17,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -850,7 +847,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 1099,
+            "nodes": 109,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -1118,7 +1115,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 7,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -2203,7 +2200,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_43ftfde4uyf"
+              "#html5_video_ffmmhir2yhd"
             ]
           }
         ]
@@ -4294,19 +4291,6 @@
               ".current",
               ".masthead-box > h2"
             ]
-          },
-          {
-            "id": "duplicate-id-aria",
-            "impact": "critical",
-            "help": "IDs used in ARIA and labels must be unique",
-            "wcag": [
-              "wcag2a",
-              "wcag412"
-            ],
-            "nodes": 1,
-            "firstTargets": [
-              "iframe[frameborder=\"0\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
-            ]
           }
         ]
       },
@@ -5309,7 +5293,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 11,
+            "nodes": 9,
             "firstTargets": [
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
               ".current",
@@ -5335,9 +5319,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\39 11290680 .ytmVideoInfoVideoTitle",
-              "#\\32 56759927 .ytmVideoInfoVideoTitle",
-              "#\\35 57281940 .ytmVideoInfoVideoTitle"
+              "#\\31 48168769 .ytmVideoInfoVideoTitle",
+              "#\\32 56084231 .ytmVideoInfoVideoTitle",
+              "#\\33 85857141 .ytmVideoInfoVideoTitle"
             ]
           },
           {
@@ -5351,9 +5335,9 @@
             ],
             "nodes": 3,
             "firstTargets": [
-              "#\\39 11290680 #movie_player",
-              "#\\32 56759927 #movie_player",
-              "#\\35 57281940 #movie_player"
+              "#\\31 48168769 #movie_player",
+              "#\\32 56084231 #movie_player",
+              "#\\33 85857141 #movie_player"
             ]
           },
           {
@@ -5368,9 +5352,9 @@
             "nodes": 4,
             "firstTargets": [
               ".navbar-nav.d-lg-flex.d-none > form > .yellow-h.btn[type=\"submit\"]",
-              "#\\39 11290680 .ytmVideoInfoChannelAvatar",
-              "#\\32 56759927 .ytmVideoInfoChannelAvatar",
-              "#\\35 57281940 .ytmVideoInfoChannelAvatar"
+              "#\\31 48168769 .ytmVideoInfoChannelAvatar",
+              "#\\32 56084231 .ytmVideoInfoChannelAvatar",
+              "#\\33 85857141 .ytmVideoInfoChannelAvatar"
             ]
           },
           {
@@ -5754,6 +5738,19 @@
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
               ".masthead-box > a:nth-child(2)"
             ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "iframe[frameborder=\"0\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
+            ]
           }
         ]
       },
@@ -5911,7 +5908,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_l18mtke44ti"
+              "#html5_video_9nh4v3mg4fi"
             ]
           }
         ]
@@ -6533,9 +6530,10 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 3,
+            "nodes": 4,
             "firstTargets": [
               "div[data-id=\"pageInfo\"] > .mb-3 > p:nth-child(1)",
+              "div[data-id=\"pageInfo\"] > .mb-3 > p:nth-child(2)",
               "div[data-id=\"pageInfo\"] > .mb-3 > p:nth-child(2) > strong:nth-child(1)",
               "strong:nth-child(6)"
             ]
@@ -6574,7 +6572,7 @@
             ]
           }
         ],
-        "violationTotal": 10,
+        "violationTotal": 11,
         "incomplete": [
           {
             "id": "color-contrast",
@@ -6584,7 +6582,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 8,
+            "nodes": 7,
             "firstTargets": [
               ".masthead-box",
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
@@ -6709,19 +6707,6 @@
             ]
           },
           {
-            "id": "duplicate-id-aria",
-            "impact": "critical",
-            "help": "IDs used in ARIA and labels must be unique",
-            "wcag": [
-              "wcag2a",
-              "wcag412"
-            ],
-            "nodes": 1,
-            "firstTargets": [
-              "iframe[data-ready=\"true\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
-            ]
-          },
-          {
             "id": "frame-title-unique",
             "impact": "serious",
             "help": "Frames must have a unique title attribute",
@@ -6732,7 +6717,7 @@
             "nodes": 2,
             "firstTargets": [
               "div:nth-child(3) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][frameborder=\"0\"]",
-              "iframe[data-ready=\"true\"]"
+              "div:nth-child(2) > div > iframe[title=\"Vimeo Video\"][allowfullscreen=\"allowfullscreen\"][frameborder=\"0\"]"
             ]
           },
           {
@@ -6760,7 +6745,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_a5o2q89doyj"
+              "#html5_video_iilnkbkqw8d"
             ]
           }
         ]
@@ -6846,7 +6831,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_pv0oqbsqny9"
+              "#html5_video_myji5ho29lm"
             ]
           }
         ]
@@ -7166,7 +7151,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_ljcekxwk6jj"
+              "#html5_video_dm0zcbxhnpw"
             ]
           }
         ]
@@ -7267,7 +7252,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_ogu6hgqlsr7"
+              "#html5_video_t6lushqujd"
             ]
           }
         ]
@@ -7368,7 +7353,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_nsh63ihbg1b"
+              "#html5_video_5giwz294qbh"
             ]
           }
         ]
@@ -7468,7 +7453,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_1s53xjqfbhe"
+              "#html5_video_pryusijri5q"
             ]
           }
         ]
@@ -7569,7 +7554,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_386w3kc7kcn"
+              "#html5_video_s8d3y36lhsb"
             ]
           }
         ]
@@ -7670,7 +7655,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_ck706k63b2"
+              "#html5_video_uqkmdzry92r"
             ]
           }
         ]
@@ -7917,7 +7902,7 @@
             ],
             "nodes": 1,
             "firstTargets": [
-              "#html5_video_it9bj1rpvlr"
+              "#html5_video_tna99h4qn7"
             ]
           }
         ]
@@ -8224,9 +8209,9 @@
             ],
             "nodes": 13,
             "firstTargets": [
-              "#moderncampuspathwayswidgetmufr0yz7gemcewmn6ia,div[data-change=\"overview-current\"]",
-              "#moderncampuspathwayswidgetmufr0yz7gemcewmn6ia,div[data-change=\"overview-salary\"]",
-              "#moderncampuspathwayswidgetmufr0yz7gemcewmn6ia,div[data-change=\"overview-postings\"]"
+              "#moderncampuspathwayswidgetmv6xm76hs8mdlq0qc8t,div[data-change=\"overview-current\"]",
+              "#moderncampuspathwayswidgetmv6xm76hs8mdlq0qc8t,div[data-change=\"overview-salary\"]",
+              "#moderncampuspathwayswidgetmv6xm76hs8mdlq0qc8t,div[data-change=\"overview-postings\"]"
             ]
           },
           {
@@ -8251,7 +8236,7 @@
               "wcag2aa",
               "wcag143"
             ],
-            "nodes": 47,
+            "nodes": 46,
             "firstTargets": [
               ".masthead-box > a[href$=\"pikespeak.edu/\"]",
               ".current",
@@ -8563,6 +8548,19 @@
               "h2",
               ".mx-0.mx-xl-auto:nth-child(2) > a",
               ".mx-0.mx-xl-auto:nth-child(4) > a"
+            ]
+          },
+          {
+            "id": "duplicate-id-aria",
+            "impact": "critical",
+            "help": "IDs used in ARIA and labels must be unique",
+            "wcag": [
+              "wcag2a",
+              "wcag412"
+            ],
+            "nodes": 1,
+            "firstTargets": [
+              "iframe[frameborder=\"0\"] .ChaptersPanelMenuOption_module_chapterListItem__22a198a7:nth-child(1) > .ChaptersCopyLinkButton_module_tooltipContainer__fd58dc8d > .ChaptersCopyLinkButton_module_buttonWrapper__fd58dc8d.Tooltip_module_tooltipContainer__b2bc4d16[aria-labelledby=\"copy-link-button-tooltip\"] > .Tooltip_module_tooltipLeft__b2bc4d16.Tooltip_module_tooltip__b2bc4d16[aria-hidden=\"true\"]"
             ]
           }
         ]
